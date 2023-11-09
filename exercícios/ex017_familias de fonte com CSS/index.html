@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vh, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /* lighter, normal, bold, bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family
+
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nisi harum hic molestiae exercitationem eius velit, voluptates minima a magni veniam. Quos officiis architecto obcaecati hic. Repellat unde excepturi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae fuga, error vero officia, illo sed magnam cumque dolor corporis vitae incidunt quisquam atque voluptatum nobis officiis autem alias? Quis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio voluptatum ullam ipsam dolorem. Ducimus repellendus voluptatem animi, hic dolore ipsam molestiae odit reiciendis ipsum tenetur quidem nostrum at voluptatum rem!</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi, quia fuga tempora aliquid cumque! Tempora repudiandae sint animi aperiam? Voluptatem necessitatibus iste cupiditate veniam magni, dolore itaque iure in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis pariatur consequatur porro error eligendi sunt minima, in iusto fugit adipisci quia sapiente. Id repellendus ea beatae natus illo qui?</p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+criar a primeira base do html e em seguida criar as variáveis no css com as cores e fontes que serão usados.
+:root {
+	--
+}
+
+ajustar o que será feito no html e ir estilizando no css

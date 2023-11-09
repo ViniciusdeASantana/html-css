@@ -1,0 +1,23 @@
+sobre B.E.M
+
+é um padrão criado para desenvolver e organizar seus códigos.
+
+B (Bloco)
+é um bloco independente, que funciona sozinha podendo haver blocos dentro de blocos (header, footer, checkbox).
+
+E (Elemento)
+faz parte do bloco (elemento-filho), ele não tem significado independente e está semânticamente vinculado ao seu respectivo bloco (item de menu, item de lista, label do checkbox).
+
+M (Modificador)
+é uma variante de um bloco ou elemento, usado para mudar aparência, variar uma propriedade ou atribuir um estado (disabled, checked, full-width, dark)
+
+ex.:
+
+bloco
+.menu
+
+elemento
+.menu__item  .menu__link
+
+modificador
+.menu--dark  .menu__item--disabled

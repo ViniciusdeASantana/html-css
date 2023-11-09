@@ -1,0 +1,179 @@
+criar um site.
+
+17. aula 1
+tudo utilizado nas aulas anteriores serão feitos neste site.
+
+após baixar os arquivos necessários no site: https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d010
+coloque na pasta criada para começar a desenvolver o site.
+
+os passos iniciais são para criar um html chamado: android.html
+em seguida, criar o código básico "!" e colocar pt-br no lugar de en em language.
+o title será Como surgiru o mascote do android?
+
+17. aula 3
+para criar um site, o melhor é planejar a estrutura dele, verificando cores, posicionamento, letras, menus, links, tudo para que o seu site seja o mais fácil de navegar.
+um bom site para verificar um padrão de como vai ficar a criação de seu site é o mockflow.com
+
+
+17. aula 4
+após planejar a estrutura do site, precisa colocar como código.
+
+dentro do <body>, crie o <header> para ter o topo do site com suas informações.
+para menu, crie um <nav> com as <a> para cada tipo de link que será posto neles e o nome de cada um.
+para o site com as informações principais crie a tag <main> e em seguida a tag <article> para colocar as informações.
+obs.: sempre manter seu código organizado para melhor visualização de quando for necessário corrigir algo.
+
+crie a tag <footer> se for necessário colocar um rodapé no seu site (este ficando fora da tag <main>).
+
+depois de realizar a estrutura inicial, precisa começar a organizar o site para tudo estar no seu devido espaço correto.
+
+vai em <head> e coloque o favicon que é o ícone que fica na guia do navegador.
+embaixo do <title>, coloque <link> e selecione como favicon, em seguida, no href, clique em ctrl+espaço e selecione o favicon que será utilizado.
+
+próximo passo é criar a organização pelo css.
+crie uma pasta para css (criado uma pasta chamada estilo), em seguida no <head>, coloque um <link> com css.
+no href crie o caminho estilo/(pasta criada)style.css, clique ctrl+botão esquerdo do mouse e vai dar um erro, neste erro é só aceitar criar o arquivo que o programa já cria a base principal do css.
+
+dentro do css, crie o @charset "UTF-8"; para que ele entre com a linguagem em pt-br
+
+neste lugar será a organização de cada tag criada para ter cor, tipo de texto, tamanho, altura, etc.
+
+crie um body {} e nele coloque o background-color
+
+na parte do texto que está escrito [extra], selecione todo este texto, clique em Shift+Ctrl+P e vai abrir uma função para incluir uma tag dentro onde você selecionou.
+procure por abbreviation, dê enter e em seguida coloque a tag <aside>
+obs.: quando já estiver procurado pela primeira vez a abbreviation, nos próximos é só colocar o "a" que já vai aparecer direto, facilitando a pesquisa.
+o aside serve para colocar em um novo bloco ( a ser editado )
+
+17. aula 5
+dando continuidade a organização do site.
+
+nos textos a seguir, precisa colocar as tags necessárias para formar uma organização de parágrafos, utilize a <h1>, <h2>, etc junto com os <p> para organizar os títulos e parágrafos.
+nos locais onde está escrito [foto], coloque a tag <img> e insira a foto que está na pasta de exercício (imagens/dan-droids.png)
+obs.: dentro do img tem um alt, ele serve para informações de deficientes visuais, nele você pode colocar um texto explicando do que se trata a imagem.
+
+em [video] será selecionado um vídeo para aparecer no site, neste caso, um vídeo pego no youtube, tem um local onde está escrito compartilhar e nele você vai em incorporar e o código saiu direto para colar no local que será inserido o vídeo no site.
+
+será preciso colocar uma lista que está marcado, nele vai ser inserido a tag <ul> (organizar a lista) e nos itens será inserido a tag <li> (sequenciar a lista)
+em cada um será incluso a tag <abbr> que serve para quando o mouse passar no nome, ele apareça uma informação no texto com a tag.
+
+precisa agora colocar as palavras em destaque, nisso será incluso em cada palavra com a tag <strong>.
+incluir também um link de site utilizando a tag <a> inserindo o link do site e colocar a target=blank para que quando clicar na palavra com o link, não sair do site que está verificando, e sim, abrindo uma nova guia de acesso.
+
+17. aula 6 - variáveis em css
+as variações do css podem ser acopladas em um :root
+nisso, pode ser incluso uma função para inserir diretamente em um local direto sem realizar pesquisas.
+ex. inserir no root "--cor0:" e depois colocar uma cor que será inclusa no site, assim que for colocar em outro local a cor escolhida, com o Ctrl+espaço na seleção de cor, no final das opções, as cores dentro do root estarão disponíveis diretamente.
+
+precisa importar o tipo de texto que será usado, no caso, google fonts tem a fonte necessária e pode ser pego com a @import url e inserir o link da font a utilizar
+também incluir um já existente utilizando a @font-face, segue o exemplo para incluir o processo:
+
+font-family: 'android';
+src: url('../fontes/idroid.otf') format('opentype');
+font-weight: normal;
+
+com isso já pode incluir no local de escolha os tipos de fontes que serão usados também inserindo as informações no :root para ir sempre escolhendo diretamente as fontes que serão usadas.
+exemplo:
+
+--fonte-padrao: arial, verdana, helvetica, sans-serif;
+--fonte-destaque: 'Bebas Neue', sans-serif;
+--fonte-android: 'android', cursive;
+
+para realizar ajustes gerais no site sobre espaçamento, parágrafos, caixas, etc, é utilizado o * para identificar que será feito o ajuste global no site.
+
+17. aula 7 e 8 - responsividade para sites
+será feito o ajuste para que o site fique centralizado e que não quebre quando é acessado por várias telas diferentes (tv, celular, monitores, etc).
+é incluso as min-witdh e max-witdh (no main configurado no css) que faça com que ele ajuste o mínimo de tela e o máximo de tela que será acessado, sendo o mínimo é para utilizar 300px, pois de celulares o costume de uso de tela chega a ser neste tamanho.
+também utilizar o ajuste de "margin: auto" para que ele fique sempre centralizado e não expanda quando está em telas grandes
+
+incluir "main img" para realizar o mesmo ajuste nas imagens para acompanhar o tamanho da tela, utilizando "width 100%"
+onde fica as imagens, tem que envelopar como <picture> e em seguida, colocar <source media> para que as imagens se adequade as pequenas telas.
+troque o min-width para max-width com 600px (isso pode variar dependendo onde está sendo aplicado) para ser feito o ajuste e coloque a imagem que está com este tipo de tamanho.
+
+algumas imagens que normalmente são pequenas podem ficar muito grandes, neste caso, precisa realizar este ajuste. exemplo deste desafio, bugdroid.
+na imagem, coloque como "class=" e intitule como pequena, em seguida no css, coloque como "main img.pequena" e dentro utilize a max-width 350px para ajustar o tamanho, como a imagem não é em bloco, coloque displya block e a margin auto para centralizar.
+
+obs de aulas anteriores: no main, coloque um espaçamento para não ficar muito grudado o site, utilize o padding com mais ou menos 20px.
+e também a margin-bottom com mais ou menos 20px
+
+colocar um sombreamento no site, utilize dentro do main o box-shadow e com os seguintes px, 0 0 10px black e faça um ajuste na transparência para suavizar.
+coloque arredondamento nas bordas de baixo do site utilizando a border bottom left e right com mais ou menos 10px
+obs.: todos os ajustes são referentes a dentro do main, salvo algumas excessões caso em outro tipo de configuração seja para realizar dentro de outro local, mas será avisado se necessário.
+
+17. aula 9 - configurando o header e o menu do site
+será feito outros ajustes dentro do <header>
+coloque a min-height com 150px para ficar ajustado todo o espaço do início do site e text-align: center para deixar centralizado o texto.
+utilize a padding-top com mais ou menos 40px para que o texto não fique muito colado no topo do site.
+
+no header > h1, use o margin-bottom de mais ou menos 20px para organizar os textos, o font-size em 3em, text-shadow em 2px 2px 0px e black colocando uma suavização.
+
+no header > p, use a font-family com a variável padrão (aulas anteriores), font-size em 1.2em, max-width em 600px, padding-right e left em 10px para quando a tela ficar menor, ele tem um espaço sem ter que ficar muito junto da tela, margin auto para manter centralizado
+colocar text shadow em 2px 2px 0px e black com suavização.
+
+no header será substituido o background color para uso do gradient que é background-image linear-gradient, utilize o to bottom com as variáveis criadas var(--cor3), var(--cor5).
+
+no nav será ajustado o padding em 10px, box-shadow em 0px 7px 7px black com suavização.
+
+ajuste nos links, será criado o nav > a com color white, padding 10px, border-radius em 5px, text-decoration em none para não ter o sublinhado, font-weight em bold para ficar mais forte o texto.
+
+criar um nav > a:hover para configuração de quando passar o mouse nos textos ele mudar de cor e outras funcionalidades.
+use o background-color com a var na cor3, color com a var na cor5
+
+obs.: na nav > a será incluso uma nova função, transition-duration que faz a duração da seleção quando mouse passar no texto durar um tempo para sumir.
+coloque com uma duração de mais ou menos 0.5s (ou apenas .5s)
+
+17. aula 10 - melhorando o formato do conteúdo
+será dado continuidade aos ajustes do site.
+crie um main p para realizar ajuste dos parágrafos, coloque a margin como 15px 0px, assim ele fará o ajuste das laterais das margens e no sentido do relógio o ajuste será feito no primeiro 15px top, bottom e o 0px right, left.
+em seguida, inclue a text-indent para 30px para ajustar o espaço de parágrafo nos textos.
+incluir line-height em 2em para ajustar o espaço entre as linhas do texto
+incluir a font-size em 1em
+
+crie um main strong com o seguinte, color var cor04, font-weight bold
+
+crie um main a para os links usando o seguinte, text-decoration none, font-weight bold, color com a var cor05, background-color var cor01, padding 2px 6px
+
+crie um main a:hover para o efeito quando passar o mouse no link usando o seguinte, text-decoration underline, color var cor-4
+
+fazer ajustes no h2.
+incluir a color var cor04, font-size em 1.3em, background-image com linear-gradient to right var cor01 e transparent, text-indent em 8px para separar o início do texto com o canto.
+
+17. aula 11 - Rodapé, conteúdo periférico e links
+dando continuidade aos ajustes para rodapé, liks e afins.
+no footer, insira o text-align como center, font-size como 0.8em, padding em 5px
+
+crie o footer a com o seguinte, color white, font-weight bolder, text-decoration none
+
+crie o footer a:hover com o seguinte, text-decoration underline, color var cor01
+
+crie o aside com o seguinte, background-color var cor01, padding 10px, border-radius 10px, box-shadow 3px 3px 8px black com suavização
+
+crie o aside > ul para ajuste da lista com o seguinte, list-style-position inside assim as marcações ficarão dentro do aside.
+insira o columns para 2 que assim a lista ficará com 2 colunas.
+
+insira o list-style-type para mudar a marcação par um ícone de escolha do site "emojiopedia" com o comando'\' e depois da barra, colocar o número sequencia existente no emoji.
+se ficar muito junto, pode colocar a uma nova \ e incluir 00A0 para que ele faça um espaçamento entre a marcação e o texto (pode fazer múltiplos \00A0 para ir aumentando o espaço)
+obs.: este list-style-type pode não ser compatível com alguns navegadores.
+
+crie a aside > h3 com o seguinte, background-color var cor04, color white, padding 10px, margin -10px -10px 0 -10px (o -10px é para que a margin aumente pra fora para organizar o espaço com a tabela de fora), border-radius 10px 10px 0px 0px (arredondamento somente dos topos no 10px).
+
+será criado um emoji de link externo pesquisando no "emojiopedia" e colocando o seguinte:
+a.externo::after com content (nas tags dos links, colocar class=externo para funcionar a função) e colocar no mesmo formato com o número do emoji e o \00A0 para ficar com o espaçamento necessário ex.: '\00A0\1F517'
+
+17. aula 12 - tornando um vídeo responsivo
+
+nota: será realizado alguns ajustes em funções das aulas anteriores.
+no header > h1 incluir o font-weight normal.
+no main h2 incluir o font-weight normal.
+no main h1 incluir o font-weight normal, font-size em 1.8em
+
+para ajustar o vídeo no site e deixar responsivo terá que ser feito o seguinte:
+no link do vídeo, envelope ele com o <div>, dentro do <div> colocar o class='video'
+depois inclua o div.video, use o background-color var cor05, margin 0px -20px 30px -20px
+inclua o div.video > iframe, no div.video coloque o position relative e no div.video > iframe coloque o position absolute
+coloque no div.video o padding-bottom 56.5% (pode variar o tamanho)
+coloque no div.video > iframe o top 5% left 5% width 90% height 90%
+
+ultimos ajustes:
+no nav > a em color, trocar para var cor01
+no header > p incluir o margin-bottom 20px
