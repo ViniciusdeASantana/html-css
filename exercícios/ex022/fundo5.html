@@ -10,13 +10,21 @@
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* shorthand - background 
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +35,10 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa nesciunt suscipit, ut recusandae repellat. Qui obcaecati sit vel sequi amet! Accusamus debitis a adipisci et minima ratione magnam repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam nam harum excepturi ipsa minima fugit ea, voluptates quisquam deleniti a ex, doloremque modi quis? Aperiam odio molestiae sequi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut rem nesciunt cum minus saepe, error velit similique, ea eos dolores exercitationem sed numquam maxime nostrum. Aperiam praesentium dolore provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa nesciunt suscipit, ut recusandae repellat. Qui obcaecati sit vel sequi amet! Accusamus debitis a adipisci et minima ratione magnam repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam nam harum excepturi ipsa minima fugit ea, voluptates quisquam deleniti a ex, doloremque modi quis? Aperiam odio molestiae sequi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut rem nesciunt cum minus saepe, error velit similique, ea eos dolores exercitationem sed numquam maxime nostrum. Aperiam praesentium dolore provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa nesciunt suscipit, ut recusandae repellat. Qui obcaecati sit vel sequi amet! Accusamus debitis a adipisci et minima ratione magnam repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam nam harum excepturi ipsa minima fugit ea, voluptates quisquam deleniti a ex, doloremque modi quis? Aperiam odio molestiae sequi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut rem nesciunt cum minus saepe, error velit similique, ea eos dolores exercitationem sed numquam maxime nostrum. Aperiam praesentium dolore provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa nesciunt suscipit, ut recusandae repellat. Qui obcaecati sit vel sequi amet! Accusamus debitis a adipisci et minima ratione magnam repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam nam harum excepturi ipsa minima fugit ea, voluptates quisquam deleniti a ex, doloremque modi quis? Aperiam odio molestiae sequi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut rem nesciunt cum minus saepe, error velit similique, ea eos dolores exercitationem sed numquam maxime nostrum. Aperiam praesentium dolore provident.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa nesciunt suscipit, ut recusandae repellat. Qui obcaecati sit vel sequi amet! Accusamus debitis a adipisci et minima ratione magnam repudiandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam nam harum excepturi ipsa minima fugit ea, voluptates quisquam deleniti a ex, doloremque modi quis? Aperiam odio molestiae sequi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut rem nesciunt cum minus saepe, error velit similique, ea eos dolores exercitationem sed numquam maxime nostrum. Aperiam praesentium dolore provident.</p>
     </main>
 </body>
