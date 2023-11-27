@@ -11,3 +11,5 @@ para emcapsular uma tag em local específico: selecione o local, Ctrl+Shift e pr
 nota: se fez a pesquisa pela primeira vez do abbr, só colocar o "a" já vai estar na primeira opção o abbr, dando mais dinamismo na pesquisa.
 
 quando for necessário incluir uma imagem, variável ou qualquer outro material que esteja em uma pasta: Ctrl+tecla de espaço
+
+para apagar toda uma linha ou o local selecionado e já como uma função de copiar: Ctrl+X
